@@ -51,23 +51,39 @@
         </header>
 
         <main id="main-content">
-            <img src="images/header-img.png" alt="Potstickers on a plate with chopsticks" id="hero">
+            
+            <picture id="hero-image">
+                    <source media="(min-width: 800px)" srcset="images2/header-img-800-Lg.png">
+                    <source media="(max-width: 525px)" srcset="images2/header-img-525-Med.png">
+                    <img src="images2/header-img-460-Sm.png" alt="Potstickers on a plate with chopsticks" id="hero" sizes="100vw">
+            </picture>
+
+        
             <h2>Modern&nbsp;Fusion Bar&nbsp;&&nbsp;Kitchen</h2>
             <a href="menu.html" class="btnLink">Our Menu</a>
-            
+    
+
             <section id="catering">
                 <h3>Cater With Us</h3>
                 <p>We cater weddings, business lunches, dinners, and more. Call us to discuss how we can be a part of your next event.</p>
             </section>
 
             <section>
-                <img src="images/local.jpg" alt="multiple asian dishes">
+                <picture alt="multiple asian dishes">
+                    <source media="(min-width: 800px)" srcset="images2/local-img-800-Lg.jpg">
+                    <source media="(max-width: 525px)" srcset="images2/local-img-350-Med.jpg">
+                    <img src="images2/local-img-350-Med.jpg" alt="An assortment of Asian dishes" id="local" sizes="100vw">
+                </picture>
                 <h3>Local Cuisine</h3>
                 <p>We refuse to compromise on quality. Our fresh ingredients are local and we are committed to serving fresh cuisine.</p>
             </section>
 
             <section>
-                <img src="images/chef.jpg" alt="hands in wok">
+                <picture alt="chef carefully preparing food in wok">
+                    <source media="(min-width: 800px)" srcset="images2/chef-img-800-Lg.jpg">
+                    <source media="(max-width: 525px)" srcset="images2/chef-img-350-Med.jpg">
+                    <img src="images2/chef-img-350-Med.jpg" alt="An assortment of Asian dishes" id="local" sizes="100vw">
+                </picture>
                 <h3>Chef Ly</h3>
                 <p>With 20 years of experience cooking in the finest restaurants, Chef Ly is committed to serving fresh food and unique experiences.</p>
             </section>
@@ -86,7 +102,7 @@
                         
                         <label for="myCity">City</label>
                         <input type="text" name="myCity" id="myCity" placeholder="City">
-                        
+                    
                         <label for="myState">State</label> 
                         <select size="1" name="myState" id="myState">
                             <option value="" selected="selected">Select a State</option>

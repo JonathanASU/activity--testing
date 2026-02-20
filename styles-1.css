@@ -71,7 +71,8 @@ body {
 
 header{
     background-color: var(--cream);
-    color: var(--light-green);
+    color: var(--sage-green);
+    font-weight: bolder;
     padding: 2rem 0 1rem 0;
 }
 
@@ -82,13 +83,12 @@ main, footer{
 
 h1, h2, h3{
     font-family: var(--header-fonts);
-    font-weight: bold;
     text-align: center;
     padding: 0 1rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 0 0 1rem 0;
 }
@@ -155,19 +155,14 @@ main {
     background-color: var(--sienna);
 }
 
-#main-content img{
-margin: auto;
-max-width: 100%;
+#hero{
+    max-width: 100%;
+    height: auto;
 }
 
 img{
     display: block;
     width: 100%;
-}
-
-#hero{
-    max-width: 1400px;
-    margin: 1rem auto;
 }
 
 main a{
@@ -181,6 +176,10 @@ main a{
 main a:hover {
     background-color: var(--sage-green);
     color: var(--cream);
+}
+
+#main-content h2{
+    margin: 1rem auto;
 }
 
 section{
@@ -221,6 +220,7 @@ form{
 input, label, select, textarea{
     display: block;
     width: 90%;
+    margin: 0.5rem auto;
 }
 
 label{
@@ -233,19 +233,18 @@ input, select, textarea{
 }
 
 input[type=text], input[type=email], input[type=tel]{
-    height: 2rem;
+    height: 2.5rem;
 }
 
 select{
-    height: 2.5rem;
-    width: 95%;
-    font-size: 1.15rem;
+    height: 3rem;
+    font-family: var(--body-fonts);
 }
 
 fieldset{
     width: 295px;
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 4fr;
     gap: 0.5rem;
     align-items: end;
     margin: 1rem 0;
@@ -253,6 +252,7 @@ fieldset{
 
 legend{
     grid-column: 1/-1;
+
 }
 
 input[type=radio]{
@@ -321,21 +321,33 @@ small{
 }
 
 /*---------- LARGE SCREEN STYLES ----------*/
+
 @media screen and (min-width: 800px){
+
+
     main, form{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        margin: 0 auto;
     }
 
-    #hero, #contact, h2, #catering{
+    #contact, h2, #catering{
         grid-column: 1/-1;
         margin: 0;
     }
 
+    #hero-image{
+        grid-column: 1/-1;
+        width: 100%;
+        margin: 0 auto;
+    }
+
      .btnLink{
         grid-column: 1/-1;
-        margin-bottom: 1.5rem;
+        width: 100%;
+        margin: 1rem 0;
+        max-width: none;
      }
 
      section{
