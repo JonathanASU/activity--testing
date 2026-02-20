@@ -160,10 +160,14 @@ main {
     height: auto;
 }
 
-img{
-    display: block;
-    width: 100%;
+main img {
+    width: auto;       /* Let images keep their natural width */
+    max-width: 100%;   /* Shrink to fit container if needed */
+    height: auto;      /* Preserve aspect ratio */
+    margin: 0 auto;    /* Center images */
 }
+
+
 
 main a{
     background-color: var(--cream);
@@ -244,7 +248,7 @@ select{
 fieldset{
     width: 295px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
     gap: 0.5rem;
     align-items: end;
     margin: 1rem 0;
