@@ -26,6 +26,7 @@
 
         <link rel="preload" as="style" href="styles-1.css">
 
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Spartan:wght@400;700&display=swap" as="style">
         <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
         <link href="styles-1.css" rel="stylesheet">
     </head>
@@ -53,9 +54,8 @@
         <main id="main-content">
             
             <picture id="hero-image">
-                    <source media="(min-width: 800px)" srcset="images2/header-img-800-Lg.avif">
-                    <source media="(max-width: 525px)" srcset="images2/header-img-525-Med.avif">
-                    <img src="images2/header-img-460-Sm.avif" alt="Potstickers on a plate with chopsticks" id="hero" sizes="100vw" fetchpriority="high">
+                <img src="images2/header-img-460-Sm.avif" srcset="images2/header-img-460-Sm.avif 460w, images2/header-img-525-Med.avif 525w, images2/header-img-800-Lg.avif 800w"
+                    sizes="100vw" width="800" height="500" alt="Potstickers on a plate with chopsticks" id="hero" fetchpriority="high">
             </picture>
 
         
@@ -69,20 +69,16 @@
             </section>
 
             <section>
-                <picture alt="multiple asian dishes">
-                    <source media="(min-width: 800px)" srcset="images2/local-img-800-Lg.avif">
-                    <source media="(max-width: 525px)" srcset="images2/local-img-350-Med.avif">
-                    <img src="images2/local-img-350-Med.avif" alt="An assortment of Asian dishes" id="local" sizes="100vw" loading="lazy">
+                <picture>
+                    <img src="images2/local-img-350-Med.avif" srcset="images2/local-img-350-Med.avif 350w, images2/local-img-800-Lg.avif 800w" sizes="100vw" width="533" height="800" alt="Chef carefully preparing food in a wok" id="chef" loading="lazy">
                 </picture>
                 <h3>Local Cuisine</h3>
                 <p>We refuse to compromise on quality. Our fresh ingredients are local and we are committed to serving fresh cuisine.</p>
             </section>
 
             <section>
-                <picture alt="chef carefully preparing food in wok">
-                    <source media="(min-width: 800px)" srcset="images2/chef-img-800-Lg.avif">
-                    <source media="(max-width: 525px)" srcset="images2/chef-img-350-Med.avif">
-                    <img src="images2/chef-img-350-Med.avif" alt="An assortment of Asian dishes" id="local" sizes="100vw" loading="lazy">
+                <picture>
+                    <img src="images2/chef-img-350-Med.avif" srcset="images2/chef-img-350-Med.avif 350w, images2/chef-img-800-Lg.avif 800w" sizes="100vw" width="533" height="800" alt="Chef carefully preparing food in a wok" id="chef" loading="lazy">
                 </picture>
                 <h3>Chef Ly</h3>
                 <p>With 20 years of experience cooking in the finest restaurants, Chef Ly is committed to serving fresh food and unique experiences.</p>
