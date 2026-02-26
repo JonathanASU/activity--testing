@@ -161,10 +161,10 @@ main {
 }
 
 main img {
-    width: auto;       /* Let images keep their natural width */
-    max-width: 100%;   /* Shrink to fit container if needed */
-    height: auto;      /* Preserve aspect ratio */
-    margin: 0 auto;    /* Center images */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 
